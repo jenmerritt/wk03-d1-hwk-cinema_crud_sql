@@ -57,4 +57,34 @@ INSERT INTO movies (title, year, show_time) VALUES ('Black Panther', 2018, '19:3
 
 UPDATE people SET name = 'Cody Abbott' WHERE name = 'Cosy Abott';
 
-SELECT * FROM people;
+-- SELECT * FROM people WHERE name = 'Olivia Wright';
+
+DELETE FROM movies WHERE title = 'Batman Begins';
+
+INSERT INTO people (name) VALUES ('Chris Fraser');
+
+INSERT INTO people (name) VALUES ('John Smith');
+-- SELECT * FROM people WHERE name = 'John Smith';
+DELETE FROM people WHERE name = 'John Smith';
+-- SELECT * FROM people;
+INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Infinity War', 2018, '00:00');
+SELECT * FROM movies;
+
+SELECT * FROM movies WHERE title = 'Iron Man 2';
+
+UPDATE movies SET show_time = '20:30' WHERE title = 'Iron Man 3';
+
+SELECT * FROM movies WHERE title = 'Iron Man 3';
+
+-- DELETE FROM movies WHERE title IN ('Iron Man', 'Iron Man 2', 'Iron Man 3');
+--
+-- SELECT * FROM movies;
+
+-- DELETE FROM movies WHERE year BETWEEN 2012 AND 2014;
+--
+-- SELECT * FROM movies;
+
+
+-- DELETE FROM movies WHERE year >= 2014 AND id <= 2017;
+--
+-- SELECT * FROM movies;
